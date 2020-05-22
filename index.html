@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Compiled and minified CSS -->
+    <title>Prerit</title>
+  </head>
+  <body>
+    <div class="preloader">
+      <div class="centered">
+        <h2>Lively</h2>
+        <div class="square"></div>
+      </div>
+    </div>
+    <div class="main-content d-none">
+      <div id="background" class="background"></div>
+      <div class="wrapper">
+        <img src="logo-new.png" class="logo" alt="" />
+        <div class="live-form">
+          <form action="./sample.php" method="post">
+            <div class="inputs">
+              <input
+                type="hidden"
+                value="0"
+                name="inputsNumber"
+                id="inputsNumber"
+              />
+            </div>
+            <input type="submit" class="button" value="Begin Streaming" />
+          </form>
+          <button id="addInput" class="button">Add Link</button>
+        </div>
+        <div class="centered"><button id="start-live">Start</button></div>
+      </div>
+    </div>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
