@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand");
+body {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  overflow: hidden;
+}
+.background {
+  position: absolute;
+  z-index: -2;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.3;
+  transition: background-image 0.5s linear;
+  height: 100vh;
+  width: 100vw;
+}
+.d-none {
+  display: none;
+}
+.live-form {
+  display: none;
+}
+.preloader {
+  z-index: 1000;
+  height: 100vh;
+  text-align: center;
+  width: 100vw;
+  overflow: hidden;
+}
+.preloader .square {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  background-color: black;
+  animation: rotate 1s ease-in-out infinite;
+}
+.preloader h2 {
+  font-family: "Quicksand", sans-serif;
+  font-size: 50px;
+}
+.input-label {
+  text-transform: uppercase;
+  font-family: "Quicksand", sans-serif;
+}
+.inputs {
+  overflow-y: scroll;
+  max-height: 300px;
+}
+button#start-live {
+  border: none;
+  font-family: "Quicksand", sans-serif;
+  outline: none;
+  font-size: 1.5rem;
+  padding: 10px;
+  border-radius: 0;
+  background-color: rgba(0, 128, 128, 0.7);
+  cursor: pointer;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.logo {
+  width: 500px;
+}
+.form-input {
+  display: block;
+  outline: none;
+  margin: 10px 0;
+  font-family: "Quicksand", sans-serif;
+  height: 20px;
+  border-radius: 10px;
+  -moz-box-shadow: inset -1px -1px 2px #ccc;
+  -webkit-box-shadow: inset -1px -1px 2px #ccc;
+  box-shadow: inset -1px -1px 2px #ccc;
+  padding: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  border: none;
+  border: 1px solid grey;
+  color: black;
+  font-size: 18px;
+  transition: border 0.4s ease-in-out;
+}
+.button {
+  border: none;
+  border-radius: 0;
+  font-family: "Quicksand", sans-serif;
+  padding: 10px;
+  font-size: 20px;
+  margin: 5px 0;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.4s ease-in-out;
+}
+.button:hover {
+  background-color: black;
+  color: white;
+}
+.form-input:focus {
+  border-color: black;
+}
+.wrapper {
+  text-align: center;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
